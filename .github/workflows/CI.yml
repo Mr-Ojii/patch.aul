@@ -19,7 +19,7 @@ jobs:
     - name: Use Developer Command Prompt
       uses: ilammy/msvc-dev-cmd@v1
     - name: Install CUDA Toolkit
-      uses: Jimver/cuda-toolkit@v0.2.10
+      uses: Jimver/cuda-toolkit@v0.2.11
     - name: Setup NuGet
       uses: nuget/setup-nuget@v1
     - name: Restore NuGet package
