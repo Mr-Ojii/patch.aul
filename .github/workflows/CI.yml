@@ -13,15 +13,15 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         submodules: recursive
     - name: Use Developer Command Prompt
       uses: ilammy/msvc-dev-cmd@v1
     - name: Install CUDA Toolkit
-      uses: Jimver/cuda-toolkit@v0.2.11
+      uses: Jimver/cuda-toolkit@v0.2.14
     - name: Setup NuGet
-      uses: nuget/setup-nuget@v1
+      uses: nuget/setup-nuget@v2
     - name: Restore NuGet package
       run : nuget restore patch.sln
     - name: Create Directories
